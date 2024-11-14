@@ -1,0 +1,59 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>College Web Page</title> 
+    <link rel="stylesheet" href="index.css"> 
+</head> 
+<body> 
+ 
+<header> 
+    <img src= "https://th.bing.com/th/id/OIP.EfBalszsYU57BEBNfbtsbQHaE8?rs=1&pid=ImgDetMain"> 
+    <h1>Mother Theresa Institute Of Engineering & Technology</h1> 
+</header> 
+<br> 
+
+<!-- This tag is used for the scrolling text --> 
+<marquee bgcolor="blue"> 
+    The Mother Theresa Institute of Engineering and Technology (MTIET) is located at Melumoi 
+    Village and Post, Palamaner, Chittoor District, Andhra Pradesh 517408. It's on the Chennai
+    Bombay National Highway, 5 kilometers from Palamaner.  
+</marquee>  
+ 
+<nav> 
+    <button onclick="location.href='dept.html'" aria-label="Home">Home</button> 
+    <button onclick="location.href='contact.html'" aria-label="Contact">Contact</button> 
+    <button onclick="location.href='about.html'" aria-label="About">About</button> 
+</nav> 
+ 
+<section class="comment-section"> 
+    <h2>Leave a Comment</h2> 
+    <textarea id="comment" placeholder="Enter your comments here..."></textarea> 
+    <br> 
+    <button onclick="submitComment()">Submit</button> 
+</section> 
+ 
+<section class="popup" id="popup"> 
+    <div class="popup-content"> 
+        <h2>Comment Submitted Successfully!</h2> 
+        <button onclick="closePopup()">Close</button> 
+    </div> 
+</section> 
+ 
+<script> 
+    function submitComment() { 
+        document.getElementById('popup').style.display = 'flex'; 
+        document.getElementById('comment').value = ''; 
+    } 
+
+    function closePopup() { 
+        document.getElementById('popup').style.display = 'none'; 
+    } 
+</script> 
+
+<h2>About:</h2> 
+<h4>Mother Theresa Institute of Engineering and Technology, established in 2010, empowers rural youth with accessible engineering education. The Institute is promoted by the non-profit 'Holy Cross Educational Society, Palamaner.</h4> 
+
+</body> 
+</html>
