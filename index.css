@@ -1,0 +1,9 @@
+body { 
+    margin: 0; 
+    font-family: Arial, sans-serif; 
+    background-image: url('https://i.ytimg.com/vi/oJu9xShl6Xo/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGGUgVyhMMA8=&rs=AOn4CLAbs-ZovvFePFzt29Jg5d5GdyqE8w');
+    background-size: cover; /* This makes the background cover the entire screen */
+    background-position: center; /* Centers the background image */
+    
+}
+  
